@@ -13,7 +13,8 @@ def index():
 
 @app.route("/psqltest")
 def psqltest():
-    return Response(pd.read_sql("SELECT * FROM actor LIMIT 10", engine).to_json(orient="records"), mimetype="application/json")
+    response = pd.read_sql("SELECT * FROM actor LIMIT 10", engine)
+    return Response(response.to_json(orient="records", date_format="iso"), mimetype="application/json")
 
 if __name__ == "__main__":
     app.run()
