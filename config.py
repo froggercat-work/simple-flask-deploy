@@ -1,2 +1,6 @@
 dbusr = "postgres"
 dbpwd = "YOUR DB PASSWORD HERE"
+dbhost = "localhost"
+dbengine = "postgresql"
+db = "test"
+cxnstring = f"{dbengine}://{dbusr}:{dbpwd}@{dbhost}/{db}"
