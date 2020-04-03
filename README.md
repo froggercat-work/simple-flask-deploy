@@ -51,3 +51,6 @@ Lecture will be recorded.
 * Supports postgres
 * Can be managed from your computer _or_ the web interface
 * Free capacity supports 1 always-on website, or many on-demand sites
+
+
+https://devcenter.heroku.com/articles/getting-started-with-python
