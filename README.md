@@ -1,58 +1,56 @@
-# How to Deploy with Free Python Hosting Services
+# Simple Flask Deploy
 
-<details>
-<summary><h2 style="display: inline; padding-top: 0">Optional Lecture 1: PythonAnywhere Deployments</h2></summary>
+## File Structure
 
-### PythonAnywhere's Free Tier Highlights
+### Heroku Deployment
 
-* Free (larger capacity than Heroku as long as you're not using too much console time)
-* MySQL only
-* Console-based
+These deploy files to not include adding Postgres to your Heroku App, btw - you have to do that by hand.
 
-### Step by Step
+There's a bunch of ways to do this, but one easy way is on the Heroku dashboard - login and add a Heroku Postgres instance to your app's resources.
 
-This will follow along with the process I demoed during our option class lecture. (If available to you, you can find this on 18-3 in Bootcampspot or your lecture overview.)
+Don't forget to add your data to your remote database! You can follow the instructions in the "Database Set Up" section if you're looking for some quick and dirty set up (just note that you'll have to add foreign and primary keys).
 
-#### 1. Create a free account on PythonAnywhere
+```
+simple-flask-deploy/
+├── static/
+│   ├── js/
+│   │   ├── index.js
+├── templates/
+│   ├── index.html
+├── app.py
+├── config.py
+├── Procfile
+├── requirements.txt
+└── runtime.txt
+```
 
-The account you create will be the only way for you to manage your server.
+### Database Set Up
 
-For groups, you should consider that if you use one member's personal account, you may lose access to your server after class if they need to use their account for something else.
+You must run the database set up manually by adding your db credentials to `config.py` and then running `python init_db.py` if you would like to use a remote db or new sqlite file.
 
-An alternative is to create a shared email account that all of you will have access to. Another advantage of this method is that you won't have to use your own personal project hosting resources for the group.
+```
+simple-flask-deploy/
+├── init_db.py
+├── actors.csv
+└── config.py
+```
 
-If you do choose to create a shared account, you can create a fake email address, or a real one. If you choose to use a fake email service, remember you will not be able to recover your account if you lose the password.
+### Small Flask App Using Its Own Endpoints to Read From A Database
 
-#### 2. Sync your project to git
+There is zero styling in any of the HTML, and the code is intentionally terse in app.py. 
 
-If you haven't already, make sure your project runs locally and is synced to git.
+The goal is to show how all the pieces fit together!
 
-You can also clone the project you're reading now.
+_`my_db.sqlite` is optional. If you prefer to use a real database, set up your credentials in `config.py`._
 
-#### 3. Clone your git repo onto PythonAnywhere
-
-Open a console on PythonAnywhere. This console works just like the gitbash console you're used to, but is only accessible on your web browser.
-
-Another 
-
-</details>
-
-<br/><br/><br/><br/><br/><br/><br/>
-
-# Today's Optional Lecture: Heroku Deployments
-
-Jump into your breakout rooms to skip.
-
-Lecture will be recorded.
-
-### Heroku's Free Tier Highlights
-
-* Supports externally hosted databases
-* Supports postgres
-* Can be managed from your computer _or_ the web interface
-* Free capacity supports 1 always-on website, or many on-demand sites
-
-
-https://devcenter.heroku.com/articles/getting-started-with-python
-
-touch
+```
+simple-flask-deploy/
+├── static/
+│   ├── js/
+│   │   ├── index.js
+├── templates/
+│   ├── index.html
+├── app.py
+├── my_db.sqlite
+└── config.py
+```
