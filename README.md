@@ -2,6 +2,8 @@
 
 Depending on what you came here for, you may not need _all_ the files in this repo. Check out the section(s) you need. If you were in one of my classes, you likely also have a demo video I recorded for you, showing how to use this repo to deploy to Heroku, PythonAnywhere, Glitch, or AWS + Dokku.
 
+This demo app uses a D3 + Flask + SQLite/PostgreSQL stack.
+
 ## Heroku Deployment
 
 These deploy files do not include adding Postgres to your Heroku App, btw - you have to do that by hand.
@@ -35,7 +37,7 @@ simple-flask-deploy/
 └── config.py
 ```
 
-## Small Flask App Using Its Own Endpoints to Read From A Database
+## Small Flask App Using Its Own Endpoints To Read From A Database
 
 There is zero styling in any of the HTML, and the code is intentionally terse in app.py. 
 
