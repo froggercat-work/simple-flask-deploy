@@ -4,7 +4,7 @@ Depending on what you came here for, you may not need _all_ the files in this re
 
 ## Heroku Deployment
 
-These deploy files to not include adding Postgres to your Heroku App, btw - you have to do that by hand.
+These deploy files do not include adding Postgres to your Heroku App, btw - you have to do that by hand.
 
 There's a bunch of ways to do this, but one easy way is on the Heroku dashboard - login and add a Heroku Postgres instance to your app's resources.
 
