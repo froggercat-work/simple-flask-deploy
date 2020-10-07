@@ -1,6 +1,6 @@
 # Simple Flask Deploy
 
-Depending on what you came here for, you may not need _all_ the files in this repo. Check out the section(s) you need. If you were in one of my classes, you likely also have a demo video I recorded for you, showing how to use this repo to deploy to Heroku.
+Depending on what you came here for, you may not need _all_ the files in this repo. Check out the section(s) you need. If you were in one of my classes, you likely also have a demo video I recorded for you, showing how to use this repo to deploy to Heroku, PythonAnywhere, Glitch, or AWS + Dokku.
 
 ## Heroku Deployment
 
