@@ -1,8 +1,8 @@
 # Simple Flask Deploy
 
-## File Structure
+Depending on what you came here for, you may not need _all_ the files in this repo. Check out the section(s) you need. If you were in one of my classes, you likely also have a demo video I recorded for you, showing how to use this repo to deploy to Heroku.
 
-### Heroku Deployment
+## Heroku Deployment
 
 These deploy files to not include adding Postgres to your Heroku App, btw - you have to do that by hand.
 
@@ -24,7 +24,7 @@ simple-flask-deploy/
 └── runtime.txt
 ```
 
-### Database Set Up
+## Database Set Up
 
 You must run the database set up manually by adding your db credentials to `config.py` and then running `python init_db.py` if you would like to use a remote db or new sqlite file.
 
@@ -35,7 +35,7 @@ simple-flask-deploy/
 └── config.py
 ```
 
-### Small Flask App Using Its Own Endpoints to Read From A Database
+## Small Flask App Using Its Own Endpoints to Read From A Database
 
 There is zero styling in any of the HTML, and the code is intentionally terse in app.py. 
 
