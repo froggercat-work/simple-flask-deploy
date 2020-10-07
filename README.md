@@ -13,10 +13,10 @@ Don't forget to add your data to your remote database! You can follow the instru
 ```
 simple-flask-deploy/
 ├── static/
-│   ├── js/
-│   │   ├── index.js
+│   └── js/
+│       └── index.js
 ├── templates/
-│   ├── index.html
+│   └── index.html
 ├── app.py
 ├── config.py
 ├── Procfile
@@ -46,10 +46,10 @@ _`my_db.sqlite` is optional. If you prefer to use a real database, set up your c
 ```
 simple-flask-deploy/
 ├── static/
-│   ├── js/
-│   │   ├── index.js
+│   └── js/
+│       └── index.js
 ├── templates/
-│   ├── index.html
+│   └── index.html
 ├── app.py
 ├── my_db.sqlite
 └── config.py
